@@ -1,0 +1,346 @@
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop (master)
+$ cd makeinindia/
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ pwd
+/c/Users/DELL/Desktop/makeinindia
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git remote -v
+origin  https://github.com/ravichauhan21/makeinindia.git (fetch)
+origin  https://github.com/ravichauhan21/makeinindia.git (push)
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git branch -a
+  b2
+* master
+  remotes/origin/master
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git branch
+  b2
+* master
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ ls -la
+total 238
+drwxr-xr-x 1 DELL 197609      0 Aug 26 11:13  ./
+drwxr-xr-x 1 DELL 197609      0 Aug 26 10:20  ../
+drwxr-xr-x 1 DELL 197609      0 Aug 26 11:13  .git/
+-rw-r--r-- 1 DELL 197609     70 Aug 26 10:45 'New Text Document.txt'
+-rw-r--r-- 1 DELL 197609 219732 Jul 31 09:10 'Session2 Software Design.pptx'
+-rw-r--r-- 1 DELL 197609     28 Aug 26 10:54  w1.txt
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git clone https://github.com/ravichauhan21/makeinindia.git
+Cloning into 'makeinindia'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 15 (delta 1), reused 15 (delta 1), pack-reused 0
+Unpacking objects: 100% (15/15), 175.14 KiB | 70.00 KiB/s, done.
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        makeinindia/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git ls
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+        lfs
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ ls
+ makeinindia/  'New Text Document.txt'  'Session2 Software Design.pptx'   w1.txt
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git log
+commit 522a7ee5cb7b2adabd76e60da3b36a789a7c7a6a (HEAD -> master, origin/master)
+Author: ravichauhan21 <ravichauhan9839@gmail.com>
+Date:   Wed Aug 26 10:56:06 2020 +0530
+
+    c2
+
+commit 1cf66a313dcdc504c84d2b6a11195e51c114ca80
+Author: ravichauhan21 <ravichauhan9839@gmail.com>
+Date:   Wed Aug 26 10:54:08 2020 +0530
+
+    c1
+
+commit 956a2253b0e4d5e31c97e774b5a8df677b71738f
+Author: ravichauhan21 <ravichauhan9839@gmail.com>
+Date:   Wed Aug 26 10:44:34 2020 +0530
+
+    addinclass
+
+commit 0b6cad99e8e8af6e5ff99c5318cd88cac8f86633
+Author: ravichauhan21 <ravichauhan9839@gmail.com>
+Date:   Wed Aug 26 10:38:28 2020 +0530
+
+    done
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        d1.txt
+        makeinindia/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git add -A
+warning: adding embedded git repository: makeinindia
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> makeinindia
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached makeinindia
+hint:
+hint: See "git help submodule" for more information.
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git commit -m "c4"
+[master 0494f58] c4
+ 2 files changed, 1 insertion(+)
+ create mode 100644 d1.txt
+ create mode 160000 makeinindia
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git add -A
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    makeinindia
+
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git log\
+> ^C
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git log
+commit 0494f58a78e09b8a452dfda5b30e05bb1342a53b (HEAD -> master)
+Author: ravichauhan21 <ravichauhan9839@gmail.com>
+Date:   Thu Aug 27 10:19:39 2020 +0530
+
+    c4
+
+commit 522a7ee5cb7b2adabd76e60da3b36a789a7c7a6a (origin/master)
+Author: ravichauhan21 <ravichauhan9839@gmail.com>
+Date:   Wed Aug 26 10:56:06 2020 +0530
+
+    c2
+
+commit 1cf66a313dcdc504c84d2b6a11195e51c114ca80
+Author: ravichauhan21 <ravichauhan9839@gmail.com>
+Date:   Wed Aug 26 10:54:08 2020 +0530
+
+    c1
+
+commit 956a2253b0e4d5e31c97e774b5a8df677b71738f
+Author: ravichauhan21 <ravichauhan9839@gmail.com>
+Date:   Wed Aug 26 10:44:34 2020 +0530
+
+    addinclass
+
+commit 0b6cad99e8e8af6e5ff99c5318cd88cac8f86633
+Author: ravichauhan21 <ravichauhan9839@gmail.com>
+Date:   Wed Aug 26 10:38:28 2020 +0530
+
+    done
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git diff
+diff --git a/d1.txt b/d1.txt
+index e69de29..b6fc4c6 100644
+--- a/d1.txt
++++ b/d1.txt
+@@ -0,0 +1 @@
++hello
+\ No newline at end of file
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git diff
+diff --git a/d1.txt b/d1.txt
+index e69de29..1bd716d 100644
+--- a/d1.txt
++++ b/d1.txt
+@@ -0,0 +1,2 @@
++hello
++Server
+\ No newline at end of file
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    makeinindia
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   d1.txt
+
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git add -A
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git commit -m "c5"
+[master 8777299] c5
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ delete mode 160000 makeinindia
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git add -A
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git reset
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git push origin master
+fatal: TaskCanceledException encountered.
+   A task was canceled.
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 604 bytes | 23.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ravichauhan21/makeinindia.git
+   522a7ee..8777299  master -> master
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 657 bytes | 3.00 KiB/s, done.
+From https://github.com/ravichauhan21/makeinindia
+ * branch            master     -> FETCH_HEAD
+   8777299..8b0fb84  master     -> origin/master
+Updating 8777299..8b0fb84
+Fast-forward
+ d1.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git branch
+  b2
+* master
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git branch -a
+  b2
+* master
+  remotes/origin/master
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git branch t1
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git branch
+  b2
+* master
+  t1
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git checkout t1
+Switched to branch 't1'
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (t1)
+$ git branch
+  b2
+  master
+* t1
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (t1)
+$ ls
+ d1.txt  'New Text Document.txt'  'Session2 Software Design.pptx'   w1.txt
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (t1)
+$ git branch -m t1 g1
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (g1)
+$ git branch
+  b2
+* g1
+  master
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (g1)
+$ ^C
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (g1)
+$

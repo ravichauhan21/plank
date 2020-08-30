@@ -1,0 +1,423 @@
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop (master)
+$ cd makeinindia/
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git status
+On branch w3
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        d2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git branch
+  b2
+  g1
+  master
+* w3
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git status
+On branch w3
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        d2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git add -A
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git checkout -b w4
+Switched to a new branch 'w4'
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w4)
+$ git checkout w3
+Switched to branch 'w3'
+A       d2.txt
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git branch -D w4
+Deleted branch w4 (was 8b0fb84).
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git status
+On branch w3
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   d2.txt
+
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ ls
+ d1.txt   d2.txt  'New Text Document.txt'  'Session2 Software Design.pptx'   w1.txt
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git remote -a
+error: unknown switch `a'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ got
+bash: got: command not found
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git remote -r
+error: unknown switch `r'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git status
+On branch w3
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   d2.txt
+
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git diff
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git diff w3. .master
+fatal: ambiguous argument 'w3.': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git diff w3..master
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git commit "c6"
+error: pathspec 'c6' did not match any file(s) known to git
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git status
+On branch w3
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   d2.txt
+
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git committ "c6"
+git: 'committ' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git commit "c6"
+error: pathspec 'c6' did not match any file(s) known to git
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git commit -m "c4"
+[w3 4e6f01f] c4
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 d2.txt
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git diff\
+> ^C
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git diff
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git diff
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git diff w3..master
+diff --git a/d2.txt b/d2.txt
+deleted file mode 100644
+index e69de29..0000000
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git merge w3
+Updating 8b0fb84..4e6f01f
+Fast-forward
+ d2.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 d2.txt
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git checkout w3
+Switched to branch 'w3'
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (w3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git branch -D w3
+Deleted branch w3 (was 4e6f01f).
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git branch
+  b2
+  g1
+* master
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git fetch origin
+From https://github.com/ravichauhan21/makeinindia
+ * [new branch]      b1         -> origin/b1
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git checkout b1
+Switched to a new branch 'b1'
+Branch 'b1' set up to track remote branch 'b1' from 'origin'.
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (b1)
+$ git branch
+* b1
+  b2
+  g1
+  master
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (b1)
+$ git fetch origin
+From https://github.com/ravichauhan21/makeinindia
+ * [new branch]      b10        -> origin/b10
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (b1)
+$ git checkout b10
+Switched to a new branch 'b10'
+Branch 'b10' set up to track remote branch 'b10' from 'origin'.
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (b10)
+$ git pull origin b10
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 645 bytes | 3.00 KiB/s, done.
+From https://github.com/ravichauhan21/makeinindia
+ * branch            b10        -> FETCH_HEAD
+   8b0fb84..4366480  b10        -> origin/b10
+Updating 8b0fb84..4366480
+Fast-forward
+ f1 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f1
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (b10)
+$ git add -A
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (b10)
+$ git commit -m "c7"
+[b10 6f17726] c7
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f2.txt
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (b10)
+$ git push origin b10
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 257 bytes | 128.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ravichauhan21/makeinindia.git
+   4366480..6f17726  b10 -> b10
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (b10)
+$
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (b10)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git branch -D b1
+Deleted branch b1 (was 8b0fb84).
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ git push origin --delete b1
+To https://github.com/ravichauhan21/makeinindia.git
+ - [deleted]         b1
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ cd..
+bash: cd..: command not found
+
+DELL@DESKTOP-7S092GR MINGW64 ~/Desktop/makeinindia (master)
+$ cd
+
+DELL@DESKTOP-7S092GR MINGW64 ~
+$ ^C
+
+DELL@DESKTOP-7S092GR MINGW64 ~
+$ cd desktop
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop (master)
+$ cd p
+PAN CARD.pdf  plank/
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop (master)
+$ cd plank/
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (master)
+$ git init
+Initialized empty Git repository in C:/Users/DELL/Desktop/plank/.git/
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (master)
+$ git add -A
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (master)
+$ git commit -m "finish"
+[master (root-commit) 7ff858d] finish
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 New Text Document.txt
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (master)
+$ git remote add origin https://github.com/ravichauhan21/plank.git
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 221 bytes | 110.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ravichauhan21/plank.git
+ * [new branch]      master -> master
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (master)
+$ git branch -b c1
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (master)
+$ ^C
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (master)
+$ git checkout -b c1
+Switched to a new branch 'c1'
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (c1)
+$ git branch
+* c1
+  master
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (c1)
+$ git branch -m c1 h1
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (h1)
+$ git push origin
+fatal: The current branch h1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin h1
+
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (h1)
+$ git branch
+* h1
+  master
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (h1)
+$ git push origin h1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'h1' on GitHub by visiting:
+remote:      https://github.com/ravichauhan21/plank/pull/new/h1
+remote:
+To https://github.com/ravichauhan21/plank.git
+ * [new branch]      h1 -> h1
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (h1)
+$ ^C
+
+DELL@DESKTOP-7S092GR MINGW64 ~/desktop/plank (h1)
